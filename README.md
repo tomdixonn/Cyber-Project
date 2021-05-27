@@ -41,7 +41,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   Metricbeat takes the metrics and statistics that it records and then can be outputted for use in the ELK stack.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name                 | Function | IP Address | Operating System |
 | -------------------- | -------- | ---------- | ---------------- |
@@ -119,9 +118,4 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
 - Run the playbook, and navigate to http://20.36.38.114:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
