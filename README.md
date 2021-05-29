@@ -78,16 +78,16 @@ services and settings quickly up and running for the systems desired purpose. Th
 
 The playbook implements the following tasks: Here is and example of 3 parts of the anisble playbook.
 
-- ...     - name: docker.io
+-      - name: docker.io
       apt:
         update_cache: yes
         name: docker.io
         state: present
-- ...    - name: Install Docker python module
+-     - name: Install Docker python module
       pip:
         name: docker
         state: present
-- ...    - name: download and launch a docker elk container
+-     - name: download and launch a docker elk container
       docker_container:
         name: elk
         image: sebp/elk:761
