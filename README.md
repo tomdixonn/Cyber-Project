@@ -118,7 +118,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the [Ansible ELK Playbook](https://github.com/tomdixonn/Cyber-Project/blob/main/Ansible/config_elk_vm.yml) file to command line.
-- Update the /etc/ansible/hosts file to include [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
+- Update the /etc/ansible/hosts file to include 
+```
+   [elk] 
+   10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
+``` 
 - Run the playbook, and navigate to http://20.36.38.114:5601/app/kibana to check that the installation worked as expected.
 
 
