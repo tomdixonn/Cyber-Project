@@ -105,7 +105,10 @@ This ELK server is configured to monitor the following machines:
 - Web-3 : 10.0.0.9
 
 We have installed the following Beats on these machines:
- - ELK-Sever, Web-1, Web-2 and Web-3
+ - ELK-Sever
+ - Web-1 
+ - Web-2
+ - Web-3
 
 These Beats allow us to collect the following information from each machine:
 - FileBeat collects data on files and locations. MetricBeat monitors metrics from the server giving the user statistics about system health and proformance.
